@@ -44,16 +44,19 @@ Sensor SR04M-2 ──distancia──▶ ESP32 ──estado──▶ LED verde/ro
 │   ├── esquematico.pdf / .png  Esquemático del circuito
 │   └── BOM.xlsx                Lista de materiales con costos y justificación
 ├── diseno-3d/
+│   ├── encapsulado.f3d         Modelo en Fusion 360 (caja + componentes)
+│   ├── ensamble_completo.step  Gemelo 3D: caja y volúmenes de los componentes
+│   ├── planos.pdf              Planos con cotas y tolerancias
 │   ├── caja_base_amplia.stl    Base para imprimir
 │   ├── caja_tapa_amplia.stl    Tapa para imprimir
-│   ├── componentes.step        Volúmenes de los componentes (gemelo 3D)
-│   └── encapsulado.f3d, renders/, planos.pdf   Modelo en Fusion 360
+│   ├── renders/                Vistas exterior e interior
+│   └── scripts/                Scripts que generaron la caja y el ensamble
 ├── testing/
 │   ├── protocolo_pruebas.md    Protocolo de pruebas y validación
 │   ├── iteraciones_prototipo.md
 │   └── datos/                  Datos de calibración y exportaciones de ThingSpeak
 └── docs/
-    └── avance1_informe.pdf
+    └── fotos/                  Fotos del prototipo (exterior, abierto y desde arriba)
 ```
 
 ## Componentes para replicar el hardware
@@ -68,8 +71,9 @@ Sensor SR04M-2 ──distancia──▶ ESP32 ──estado──▶ LED verde/ro
 | Resistencia 1 kΩ | 1 |
 | Protoboard 400 puntos y cables jumper | 1 + set |
 | Caja impresa en 3D (PLA) y 4 tornillos M3 | 1 |
+| Soporte de demostración: base MDF y tubo PVC 25 mm | 1 |
 
-Costo total estimado: **$33.750 CLP** (detalle en `hardware/BOM.xlsx`).
+Costo por dispositivo: **$34.020 CLP**, más $5.156 del soporte de demostración (detalle, fuentes y justificación en `hardware/BOM.xlsx`).
 
 ### Conexiones
 
@@ -106,7 +110,7 @@ El sensor se alimenta a 3,3 V para que sus señales queden al nivel lógico del 
 - Tasa de respuesta del sensor: 59 a 64 % de los disparos, compensada con la mediana de 5 lecturas.
 - Protocolo completo y resultados en `testing/protocolo_pruebas.md`.
 
-## Fuentes
+## Fuentes del problema (Avance 1)
 
 - Ahumada, S. (2026, 10 de abril). La deuda de la Alameda con Estación Central. *El Mostrador*.
 - García Guerrero, C. del C. (2022). *Diseño de un sistema inteligente para la detección de plazas de estacionamientos libres* [Tesis de pregrado, Universidad de Chile].
