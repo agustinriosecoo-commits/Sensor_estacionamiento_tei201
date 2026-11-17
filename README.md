@@ -42,7 +42,7 @@ Sensor SR04M-2 ──distancia──▶ ESP32 ──estado──▶ LED verde/ro
 ├── dashboard/                  Visualizaciones MATLAB de ThingSpeak
 ├── hardware/
 │   ├── esquematico.pdf / .png  Esquemático del circuito
-│   └── BOM.xlsx                Lista de materiales con costos y justificación
+│   └── BOM Sensor de estacionamiento TEI201.xlsx                Lista de materiales con costos y justificación
 ├── diseno-3d/
 │   ├── encapsulado.f3d         Modelo en Fusion 360 (caja + componentes)
 │   ├── ensamble_completo.step  Gemelo 3D: caja y volúmenes de los componentes
