@@ -65,7 +65,7 @@ Herramienta: **Claude (Anthropic)**, usado entre septiembre y noviembre de 2026 
 * Uso: estructura de la tabla y redacción de la justificación técnica de cada componente.
 * Adaptación: el equipo aportó los componentes reales, la cotización original y los precios pagados.
 
-### Encapsulado (`diseno-3d/caja\_amplia.py`, `componentes\_fusion.py`)
+### Encapsulado (`diseno-3d/scripts/`: `caja_amplia.py`, `componentes_fusion.py`, `stl_a_step.py`, `ensamble_completo.py`)
 
 * Uso: scripts que modifican el STL de la caja diseñada por el equipo (ranura USB-C, un solo agujero de LED, cuna para el ESP32, caja más amplia) y generan los volúmenes de los componentes para el gemelo 3D.
 * Adaptación: el equipo diseñó la caja original, decidió montar el ESP32 con los pines hacia arriba, midió la placa (55 mm de largo) y verificó que todo el hardware entra en la caja impresa.
