@@ -1,0 +1,6 @@
+distancia_real_cm,medida_sin_calibrar_cm,error_sin_calibrar_cm,calibrada_modelo_cm,error_calibrado_cm,uso
+30,26.0,-4.0,30.3,0.3,ajuste
+60,55.0,-5.0,59.6,-0.4,ajuste
+100,95.0,-5.0,100.0,0.0,ajuste
+150,144.5,-5.5,150.1,0.1,ajuste
+80,,,80.8,0.8,validacion_fuera_de_muestra
